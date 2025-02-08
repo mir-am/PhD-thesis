@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\multirow{2}{*}{\textbf{Models}} & \multirow{2}{*}{\textbf{CG Gen. [s]}} & \multicolumn{2}{c}{\textbf{Pruning [s]}} & \multirow{2}{*}{\textbf{Total Time [s]}} \\
+\cmidrule(lr){3-4}
+&    & Feature & Infer. &    \\ 
+\midrule
+\multicolumn{5}{@{}l}{\it 0-CFA} \\ 
+\midrule
+\textbf{CodeBERT} & \multirow{2}{*}{\mypm{21.4}{57.0}} & \multirow{2}{*}{\mypm{2.8}{3.5}} & \mypm{18.6}{30.9} & \mypm{42.7}{65.2}\\
+\textbf{CodeT5} & & & \mypm{18.9}{31.4} & \mypm{43.0}{65.4} \\
+\midrule
+\multicolumn{5}{@{}l}{\it 1-CFA} \\ 
+\midrule
+\textbf{CodeBERT} & \multirow{2}{*}{\mypm{42.3}{120.5}} & \multirow{2}{*}{\mypm{1.4}{0.8}} & \mypm{11.7}{11.2} & \mypm{55.1}{122.6} \\
+\textbf{CodeT5} & & & \mypm{14.5}{20.0} & \mypm{57.9}{123.9} \\
+\bottomrule
+\end{tabular}

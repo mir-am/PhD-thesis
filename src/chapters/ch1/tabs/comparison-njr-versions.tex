@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+& \multicolumn{3}{c}{\textbf{Original}} & \multicolumn{3}{c}{\textbf{De-compiled}} & \multicolumn{3}{c}{\textbf{Recovered}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+{\bf Models} & P & R & F1 & P & R & F1 & P & R & F1 \\
+\midrule
+\textbf{CGPruner~\cite{utture2022striking}}\tnote{1} & 0.61 & 0.48 & 0.47 & 0.61 & 0.48 & 0.47 & 0.61 & 0.48 & 0.47  \\
+\textbf{AutoPruner~\cite{le2022autopruner}} & 0.60 & 0.67 & 0.59 & 0.60 & 0.63 & 0.57 & 0.58 & 0.63  & 0.57 \\
+\textbf{CodeBERT} & 0.61 & 0.66 & 0.59 & 0.60 & 0.65 & 0.57 & 0.59 & 0.61 & 0.56 \\
+\textbf{CodeT5} & \textbf{0.63} & 0.66 & 0.60 & \textbf{0.64} & 0.69 & 0.62 & \textbf{0.63} & 0.64 & 0.60 \\
+\textbf{CodeT5+} & 0.62 & \textbf{0.76} & \textbf{0.64} & 0.63 & \textbf{0.76} & \textbf{0.65} & \textbf{0.63} & \textbf{0.73} &  \textbf{0.64} \\
+\midrule
+\textbf{Average} & 0.61 & 0.65 & 0.58 & 0.62 & 0.64 & 0.58 & 0.61 & 0.62 & 0.57 \\
+\midrule
+\textbf{Wala} & 0.26 & 0.96 & 0.35 & 0.26 & 0.96 & 0.35 & 0.26 & 0.96 & 0.35 \\
+\bottomrule
+\end{tabular}

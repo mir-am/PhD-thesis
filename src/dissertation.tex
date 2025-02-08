@@ -1,0 +1,103 @@
+\documentclass{dissertation}
+%\documentclass[print]{dissertation}
+%\documentclass[print,draft]{dissertation}
+
+% Packages
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{subcaption}
+\usepackage[most]{tcolorbox}
+\usepackage{pdfpages}
+
+
+% General commands
+\NewDocumentCommand\tool{+m}{{\small\scshape #1}\xspace}
+\NewDocumentCommand\code{+m}{\texttt{#1}}
+
+\hyphenation{Ma-chine Learn-ing-as-sis-ted Soft-ware Anal-y-sis}
+\newcommand{\sparkline}[1]{$\vcenter{\hbox{\includegraphics[scale=0.04]{#1}}}$}
+
+\makeglossaries
+
+\newcommand*{\origrightarrow}{}
+\let\oldarrow\textrightarrow
+\renewcommand*{\textrightarrow}{\fontfamily{cmr}\selectfont\origrightarrow}
+\loadglsentries[main]{glossary}
+
+\input{abbreviations}
+
+\begin{document}
+%% Specify the title and author of the thesis. This information will be used on
+%% the title page (in title/title.tex) and in the metadata of the final PDF.
+\title{Machine Learning-assisted Software Analysis}
+
+\author{Amir M.}{Mir}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+\setcounter{page}{0}\includepdf{cover/cover-front.pdf}
+\include{title/title}
+
+%% The (optional) dedication can be used to thank someone or display a
+%% significant quotation.
+\dedication{\centering \textit{I dedicate my PhD thesis to my mother who unexpectedly passed away at the end of my PhD journey.}}
+
+\tableofcontents
+
+\include{summary/summary}
+\include{acks/acks}
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%% Turn on thumb indices.
+\thumbtrue
+
+\include{introduction/introduction}
+
+% Chapters
+\include{chapters/ch1/ch1}
+\include{chapters/ch2/ch2}
+\include{chapters/ch3/ch3}
+\include{chapters/ch4/ch4}
+
+\include{conclusion/conclusion}
+
+%% Use letters for the chapter numbers of the appendices.
+%\appendix
+
+%\include{appendix-a/appendix-a}
+
+%% Turn off thumb indices for unnumbered chapters.
+\thumbfalse
+
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+\setheader{Bibliography}
+
+% URLs in this thesis have been archived on Archive.org. Their link target in digital editions refers
+% to this timestamped version.
+
+\bibliographystyle{unsrt}
+% argument is your BibTeX string definitions and bibliography database(s)
+\bibliography{dissertation}
+
+%% \chapter*{Glossary}
+% \glsaddall
+% \printglossary[type=\acronymtype,title={Glossary}]
+% \addcontentsline{toc}{chapter}{Glossary}
+% \setheader{Glossary}
+
+\include{cv/cv}
+\include{publications/publications}
+\include{ipa/ipadissertations_2025}
+% Back cover
+\includepdf{cover/cover-back.pdf}
+
+\end{document}
+

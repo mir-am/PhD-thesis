@@ -1,0 +1,156 @@
+\documentclass{propositions}
+
+%% Turn off page numbering for the propositions and make the margins on both
+%% sides equal and symmetrical.
+\geometry{twoside=false}
+\pagestyle{empty}
+
+\RequirePackage{unicode-math}
+\RequirePackage{enumitem}
+
+\setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
+\setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
+\setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
+\setmonofont[Scale=MatchLowercase, Path=fonts/inconsolata/]{Inconsolata-Regular.ttf}
+%% The default style for text is Tahoma (sans-serif).
+%\renewcommand*\familydefault{\rmfamily}
+
+\begin{document}
+
+%% Specify the title and author of the thesis. This information will be used on
+%% both the English and Dutch side and in the metadata of the final PDF.
+\title{Machine Learning-assisted Software Analysis}
+\author{Amir M.}{Mir}
+
+\begin{center}
+
+{\Large\titlefont\bfseries Propositions}
+
+\smallskip
+
+accompanying the dissertation
+
+\smallskip
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\large\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \titlefont\titleshape\@subtitle
+\fi
+\makeatother}
+
+\smallskip
+
+by
+
+\smallskip
+
+%% Print the full name of the author.
+\makeatletter
+{\large\titlefont\bfseries\@firstname\ {\titleshape\@lastname}}
+\makeatother
+
+\end{center}
+
+% \bigskip
+
+\begin{enumerate}[itemsep=1pt]
+\item The next generation of software analysis tools is powered by machine learning, enabling them to better deal with uncertainty when analyzing programs. [this thesis]
+  \item Machine learning-based code companions have a very high potential to boost developers' productivity by assisting them in writing type annotations, unit tests, code review, etc. [this thesis]
+  \item Call graph-based analysis is a ”must-have” feature to make vulnerability analysis tools more actionable and accurate in their assessments. [this thesis]
+  \item Machine learning models outperform approaches based on hand-crafted heuristics and domain knowledge at software analysis tasks, though at a higher computational cost, as they need to be trained and queried. [this thesis]
+  % \item Doing internships is an important part of a PhD journey as it gives a different perspective to PhD students on how people work in the industry and helps them find a job after graduation.
+  \item PhD students should not only be assessed on their ability to do independent research, but also on their ability to collaborate effectively with researchers within or outside their institution.
+  \item Soon, AI agents will be an inevitable part of developers' and researchers' workflow. Hence, (PhD) students should be taught how to properly use AI agents to boost their productivity without hampering creativity.
+
+  % \item Specialized LLMs should be proposed that perform well at a certain coding task, and they leverage neural processing units in new consumer-level CPUs.
+  \item International (PhD) students are often on a visa, and hence, they deal with more stress when it comes to graduation and getting a job.
+  % \item Academia usually promotes unhealthy work-life balance, emphasizing more publications over well-being and research impact.
+  \item The dominance of big tech companies, with their massive resources and budgets, in AI research is a threat to transparency, creativity, and openness in the field of AI.
+  % \item There are currently sufficient computing resources to create Artificial General Intelligence (AGI). However, AI research needs another breakthrough in creating systems that offer true AGI.
+\end{enumerate}
+
+% \bigskip
+% \bigskip
+
+%% Apart from the name and title of the supervisor, the following text is
+%% dictated by the promotieregelement.
+\begin{center}
+These propositions are regarded as opposable and defendable, and have been approved as such by the
+promotors prof.\ dr.\ A.\ van Deursen, dr.\ S.\ Proksch
+\end{center}
+
+%% \clearpage
+%% {\selectlanguage{dutch}
+
+%% \begin{center}
+
+%% {\Large\titlefont\bfseries Stellingen}
+
+%% \bigskip
+
+%% behorende bij het proefschrift
+
+%% \bigskip
+
+%% %% Print the title.
+%% {\makeatletter
+%% \titlestyle\bfseries\large\@title
+%% \makeatother}
+
+%% %% Print the optional subtitle.
+%% {\makeatletter
+%% \ifx\@subtitle\undefined\else
+%%     \titlefont\titleshape\@subtitle
+%% \fi
+%% \makeatother}
+
+%% \bigskip
+
+%% door
+
+%% \bigskip
+
+%% %% Print the full name of the author.
+%% \makeatletter
+%% {\large\titlefont\bfseries\@firstname\ {\titleshape\@lastname}}
+%% \makeatother
+
+%% \end{center}
+
+%% \bigskip
+%% \bigskip
+
+%% \begin{enumerate}
+
+%% \item Stelling 1.
+%% \item Stelling 2.
+%% \item Stelling 3.
+%% \item Stelling 4.
+%% \item Stelling 5.
+%% \item Stelling 6.
+%% \item Stelling 7.
+%% \item Stelling 8.
+%% \item Stelling 9.
+%% \item Stelling 10.
+
+%% \end{enumerate}
+
+%% \bigskip
+%% \bigskip
+
+%% %% Apart from the name and title of the supervisor, the following text is
+%% %% dictated by the promotieregelement.
+%% \begin{center}
+%% Deze stellingen worden opponeerbaar en verdedigbaar geacht en zijn als zodanig goedgekeurd door de promotoren prof.\ dr.\ A.\ van Deursen and dr.\ A.\ Zaidman.
+%% \end{center}
+
+%% }
+
+\end{document}
+

@@ -1,0 +1,202 @@
+\begin{titlepage}
+
+\begin{center}
+
+%% Extra whitespace at the top.
+\vspace*{2\bigskipamount}
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\LARGE\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \bigskip
+    \titlefont\titleshape\Large\@subtitle
+\fi
+\makeatother}
+
+\end{center}
+
+\cleardoublepage
+\thispagestyle{empty}
+
+\begin{center}
+
+%% The following lines repeat the previous page exactly.
+
+\vspace*{2\bigskipamount}
+
+%% Print the title.
+{\makeatletter
+\titlestyle\bfseries\LARGE\@title
+\makeatother}
+
+%% Print the optional subtitle.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \bigskip
+    \titlefont\titleshape\Large\@subtitle
+\fi
+\makeatother}
+
+%% Uncomment the following lines to insert a vertically centered picture into
+%% the title page.
+%\vfill
+%\includegraphics{title}
+\vfill
+
+%% Apart from the names and dates, the following text is dictated by the
+%% promotieregelement.
+
+{\Large\titlefont\bfseries Dissertation}
+
+\bigskip
+\bigskip
+
+for the purpose of obtaining the degree of doctor
+
+at Delft University of Technology,
+
+by the authority of the Rector Magnificus Prof.dr.ir. T.H.J.J. van der Hagen,
+
+Chair of the Board for Doctorates,
+
+to be defended in a public ceremony
+
+on Thursday, 6 February 2025 at 15:00 o'clock
+
+\bigskip
+\bigskip
+
+by
+
+\bigskip
+\bigskip
+
+%% Print the full name of the author.
+\makeatletter
+{\Large\titlefont\bfseries\@firstname\ \titleshape{\MakeUppercase{\@lastname}}}
+\makeatother
+
+\bigskip
+\bigskip
+
+Master of Science in Computer Engineering - Artificial Intelligence, \\
+Azad University (North Tehran Branch), Tehran, Iran \\
+Born in Tehran, Iran
+%% Extra whitespace at the bottom.
+\vspace*{2\bigskipamount}
+
+\end{center}
+
+\clearpage
+\thispagestyle{empty}
+
+%% The following line is dictated by the promotieregelement.
+\noindent This dissertation has been approved by the promotors.
+
+%% List the promotors (supervisors).
+\medskip\noindent
+\begin{tabular}{l}
+    % Promotor: Prof.\ dr.\ A.\ van Deursen \\
+    % Copromotor: Dr.\ ir.\ ing.\ S.\ Proksch \\
+    % Copromotor: Dr.\ ir.\ G.\ Gousios
+\end{tabular}
+
+\bigskip
+% \noindent Independent members:
+
+%% List the committee members, starting with the Rector Magnificus and the
+%% promotor(s) and ending with the reserve members.
+% \medskip
+\noindent
+\begin{tabular}{p{4.5cm}l}
+    % Rector Magnificus, & Chairperson \\
+    % Prof.\ dr.\ A.\ van Deursen, & Technische Universiteit Delft \\
+    % Dr.\ ir.\ S.\ Proksch, & Technische Universiteit Delft \\
+    % Dr.\ ir.\ G.\ Gousios, & Technische Universiteit Delft \\
+
+    % \medskip
+    % External committee members
+    % \emph{Onafhankelijke leden:}
+    \mbox{\emph{Composition of the doctoral committee:}} & \\
+    Rector Magnificus, & Chairperson \\
+    Prof.\ dr.\ A.\ van Deursen & Delft University of Technology, promotor \\
+    Dr.\ ir.\ S.\ Proksch & Delft University of Technology, copromotor \\
+    \mbox{\emph{Independent members:}} & \\
+    Prof.\ dr.\ ir.\ F.\ A.\ Kuipers, & Delft University of Technology \\
+    Prof.\ dr.\ M.\ Pradel, & University of Stuttgart, Germany \\
+    Prof.\ dr.\ P.\ Devanbu, & University of California at Davis, USA \\
+    Dr.\ B.\ Ray, & Columbia University, USA \\
+    Prof.\ dr.\ A.\ E.\  Zaidman & Delft University of Technology, reserve member \\
+    \mbox{\emph{Non-independent members:}} & \\
+    Dr.\ ir.\ G.\ Gousios & Delft University of Technology \\
+    
+    % Prof.\ dr.\ ir.\ E.\ Visser, & Technische Universiteit Delft, reservelid \\ \\
+
+    % \multicolumn{2}{l}{Prof. dr. D. Spinellis has contributed to the end
+    % phase of writing \ldots} \\
+\end{tabular}
+
+%% Include the following disclaimer for committee members who have contributed
+%% to this dissertation. Its formulation is again dictated by the
+%% promotieregelement.
+%\medskip
+%\noindent  %Prof.\ Dr.\ D.\ Spinellis has contributed to the creation of this thesis.
+
+\medskip
+\medskip
+% TODO Include http://www.win.tue.nl/ipa/?page_id=309
+\noindent The work in the thesis has been carried out under the auspices of the research school IPA (Institute for Programming Research and Algorithmics) and was funded by the FASTEN project, a European Union’s Horizon 2020 research and innovation program under grant agreement number 825328.
+
+\medskip
+%% Here you can include the logos of any institute that contributed financially
+%% to this dissertation.
+\vfill
+\begin{center}
+    \includegraphics[height=0.5in]{title/logos/tudelft}
+    \hspace{2em}
+    %\includegraphics[height=0.5in]{title/logos/casimir} \\
+    \includegraphics[height=0.5in]{title/logos/fasten_logo.png}
+    \\ \vspace{0.5cm}
+    \includegraphics[height=0.5in]{title/logos/ipa}
+    \hspace{2em}
+    \includegraphics[height=0.75in]{title/logos/eu_h2020_logo.png}
+\end{center}
+\vfill
+
+\noindent
+\begin{tabular}{@{}p{0.2\textwidth}@{}p{0.8\textwidth}}
+  \textit{Keywords:}  & Machine Learning, Software Analysis, Software Engineering \\[\medskipamount]
+      \textit{Printed by:} & ProefschriftMaken (www.proefschriftmaken.nl) \\[\medskipamount]
+      \textit{Cover:} & Open AI's DALL·E 3 \\[\medskipamount]
+      \textit{Style:} & TU Delft House Style, with modifications by Moritz Beller \\& \url{https://github.com/Inventitech/phd-thesis-template} \\[\medskipamount]
+\end{tabular}
+
+\medskip
+\medskip
+\noindent The author set this thesis in \LaTeX\xspace using the Libertinus and Inconsolata fonts.
+
+\vspace{\bigskipamount}
+
+% Copyrighting this is stupid, questionable, and probably illegal, because large parts of the
+% thesis have already been published with the copyright resigning with the publisher.
+%\noindent Copyright \textcopyright\ 2015 by A.~Einstein
+
+%% Uncomment the following lines if this dissertation is part of the Casimir PhD
+%% Series, or a similar research school.
+%\medskip
+%\noindent Casimir PhD Series, Delft-Leiden 2015-01
+
+%\medskip
+\noindent ISBN 978-94-6518-015-1
+
+\medskip
+\noindent An electronic version of this dissertation is available at \\
+\url{http://repository.tudelft.nl/}.
+
+\end{titlepage}
+

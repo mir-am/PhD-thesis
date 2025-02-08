@@ -1,0 +1,18 @@
+\resizebox{\columnwidth}{!}{\begin{tabular}{@{}lc@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{}}
+\toprule
+& \multicolumn{4}{c}{\textbf{NJR-1}} & \multicolumn{4}{c}{\textbf{XCorpus}} & \multicolumn{4}{c}{\textbf{YCorpus}} & \multicolumn{4}{c}{\textbf{NYXCorpus}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9} \cmidrule(lr){10-13} \cmidrule(lr){14-17}
+{\bf Models} & P & R & F1 & F2 & P & R & F1 & F2 & P & R & F1 & F2 & P & R & F1 & F2 \\
+\midrule
+\textbf{Random Classifier}  & 0.23 & 0.47 & 0.31 & 0.39 & 0.39 & \textbf{0.48} & 0.43 & 0.46 & 0.22 & 0.45 & 0.29 & 0.37 & 0.25 & 0.47 & 0.33 & 0.40 \\       
+\textbf{CGPruner}  & \textbf{0.66} & 0.48 & 0.56 & 0.51 & 0.49 & 0.28 & 0.36 & 0.30 & \textbf{0.71} & 0.24 & 0.36 & 0.28 & 0.61 & 0.43 & 0.50 & 0.46 \\
+\textbf{AutoPruner}  & 0.62 & 0.66 & 0.64 & 0.65 & 0.53 & 0.41 & 0.46 & 0.43 & 0.50 & \textbf{0.51} & \textbf{0.50} & \textbf{0.51} & 0.60 & \textbf{0.61} & 0.60 & \textbf{0.60} \\
+\textbf{CodeBERT}  & 0.62 & 0.68 & 0.65 & 0.67 & 0.52 & 0.47 & \textbf{0.50} & \textbf{0.48} & 0.50 & 0.48 & 0.49 & 0.49 & 0.59 & 0.60 & 0.60 & \textbf{0.60} \\
+\textbf{CodeT5}  & 0.65 & 0.69 & \textbf{0.67} & 0.68 & 0.54 & 0.31 & 0.39 & 0.34 & 0.50 & 0.48 & 0.49 & 0.48 & 0.63 & 0.58 & \textbf{0.61} & 0.59 \\
+\textbf{CodeT5+}  & 0.63 & \textbf{0.73} & \textbf{0.67} & \textbf{0.70} & \textbf{0.61} & 0.23 & 0.34 & 0.27 & 0.54 & 0.46 & \textbf{0.50} & 0.48 & \textbf{0.65} & 0.57 & \textbf{0.61} & 0.58 \\
+\midrule
+\textbf{Average} & 0.57 & 0.62 & 0.58 & 0.60 & 0.51 & 0.36 & 0.41 & 0.38 & 0.49 & 0.44 & 0.44 & 0.43 & 0.55 & 0.54 & 0.54 & 0.54 \\
+\midrule
+\textbf{Wala} & 0.24 & 0.95 & 0.38 & 0.59 & 0.39 & 0.95 & 0.55 & 0.73 & 0.22 & 0.90 & 0.35 & 0.55 & 0.25 & 0.95 & 0.39 & 0.60 \\
+\bottomrule
+\end{tabular}}

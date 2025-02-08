@@ -1,0 +1,24 @@
+\begin{threeparttable}
+\begin{tabular}{@{}lrrrrr@{}} % Six columns
+\toprule
+\multirow{2}{*}{\bf Models} & \multicolumn{2}{c}{\bf CG Size} & \multicolumn{2}{c}{\bf Reachable ...} & \multirow{2}{*}{\bf Time (ms)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Edges& Nodes\tnote{1} & .. Paths & .. Nodes & \\
+\midrule
+\textbf{Wala} & 5227.1 & 1420.2 & 853.9 & 99.8\% & \mypm{8.1}{26.6} \\
+\midrule
+\multicolumn{6}{@{}c@{}}{{\it Conservative Pruning} \hfill ($>0.95$ confidence)} \\ 
+\midrule
+\textbf{CodeBERT} & 1736.4 & 1048.2 & 515.3 & 86.0\% & \mypm{2.3}{8.1} \\
+\textbf{CodeT5} & 1498.2 & 950.5 & 388.6 & 82.0\% & \mypm{1.5}{4.8} \\
+\midrule
+\multicolumn{6}{@{}c@{}}{{\it Paranoid Pruning} \hfill ($0.99$ weight, $>0.95$ confidence)} \\ 
+\midrule
+\textbf{CodeBERT} & 3728.4 & 1392.2 & 778.9 & 98.4\% & \mypm{6.6}{23.0} \\
+\textbf{CodeT5} & 3503.5 & 1337.3 & 832.5 & 96.9\% & \mypm{6.7}{23.0} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+    \item[1] \#Nodes with at least an incoming and/or out-going edge
+\end{tablenotes}
+\end{threeparttable}

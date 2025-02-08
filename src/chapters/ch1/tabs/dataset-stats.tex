@@ -1,0 +1,17 @@
+\begin{threeparttable}
+\begin{tabular}{@{}l rr c rr r@{}}
+\toprule
+\multirow{2}{*}{\textbf{Dataset}} & \multicolumn{2}{c}{\textbf{Num. Edges}} && \multicolumn{2}{c}{\textbf{Num. Tokens}} & \multirow{2}{*}{\textbf{P/R Ratio}}\tnote{1} \\
+\cmidrule{2-3} \cmidrule{5-6}
+ & \textbf{Train} & \textbf{Test} && \textbf{Train} & \textbf{Test} & \\
+\midrule
+NJR-1 & 859K & 405K && 262M & 124M & 18.7 \\
+XCorpus & 269K & 57K && 22M & 8M & 2.4 \\
+YCorpus & 242K & 72K && 35M & 9M & 3.7 \\
+NYXCorpus & 1.37M & 534K && 319M & 141M & 7.6 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item[1] Ratio of to-be-pruned and to-be-retained edges.
+\end{tablenotes}
+\end{threeparttable}
